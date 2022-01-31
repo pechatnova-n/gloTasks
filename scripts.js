@@ -1,4 +1,4 @@
-let num =  266219;
+/*let num =  266219;
 
 let arr = num.toString().split("");
 console.log(arr);
@@ -10,6 +10,37 @@ for (let i = 0; i < arr.length; i++) {
 console.log(multi);
 
 multi = multi ** 3;
-console.log(multi.toString().split("").slice(0,2).join(""));
+console.log(multi.toString().split("").slice(0,2).join(""));*/
+
+
+const lang = 'ru';
+
+if (lang == 'ru') {
+    console.log('Понедельник, Вторник, Среда, Четверг, Пятница, Суббота, Воскресенье');
+} if (lang == 'en') {
+    console.log('Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday');
+}
+
+
+switch (lang) {
+    case 'ru':
+        console.log('Понедельник, Вторник, Среда, Четверг, Пятница, Суббота, Воскресенье');
+        break;
+    case 'en':
+        console.log('Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday');
+        break;
+}
+
+
+const days = {
+    ru: ['Понедельник, Вторник, Среда, Четверг, Пятница, Суббота, Воскресенье'],
+    en:  ['Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday']
+ }
+
+console.log(days[lang]);
+
+
+
+
 
 
