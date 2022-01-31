@@ -1,4 +1,4 @@
-/*let num =  266219;
+let num =  266219;
 
 let arr = num.toString().split("");
 console.log(arr);
@@ -10,7 +10,8 @@ for (let i = 0; i < arr.length; i++) {
 console.log(multi);
 
 multi = multi ** 3;
-console.log(multi.toString().split("").slice(0,2).join(""));*/
+console.log(multi.toString().split("").slice(0,2).join(""));
+
 
 
 const lang = 'ru';
@@ -36,9 +37,12 @@ const days = {
     ru: ['Понедельник, Вторник, Среда, Четверг, Пятница, Суббота, Воскресенье'],
     en:  ['Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday']
  }
-
 console.log(days[lang]);
 
+
+const namePerson = 'Александр';
+const nameCheck = (namePerson == 'Артем') ? console.log('директор'):
+    (namePerson == 'Александр') ? console.log('преподаватель') : console.log('студент');
 
 
 
