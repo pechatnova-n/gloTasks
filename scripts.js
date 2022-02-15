@@ -7,13 +7,7 @@ let data, options, data_opt;
 let year, month, day, hours, minutes, second;
 
 
-const addZerro = (num) => {
-    if(num < 10) {
-        return '0' + num;
-    } else {
-        return num;
-    }
-}
+const addZerro = (num) => (num < 10) ? '0' + num : num;
 
 function declOfNum(n, text_forms) {
     n = Math.abs(n) % 100;
